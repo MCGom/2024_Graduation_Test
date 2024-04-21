@@ -52,6 +52,7 @@ const Register = () => {
     .post("http://localhost:8080/register", formData,  { withCredentials: true}
      )
     .then((res) => {
+      window.location.href = "http://localhost:3000/main"
     })
     .catch((error) => 
       console.error(error))
